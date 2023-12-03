@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/event"
+        android:title="ইভেন্ট"
+        android:icon="@drawable/contact_icon"
+        app:showAsAction="never"
+        android:iconTint="@color/white"
+        android:iconTintMode="multiply"
+        android:enabled="true"/>
+
+
+
+
+
+    <item
+        android:id="@+id/development_activities"
+        android:title="উন্নয়ন কার্যক্রম"
+        android:icon="@drawable/development_icon"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/navMeeting"
+        android:title="অ্যাপয়েন্টমেন্ট"
+        android:icon="@drawable/appoinment_icon"
+        android:enabled="true"
+        />
+
+
+</menu>

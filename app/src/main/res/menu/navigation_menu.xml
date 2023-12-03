@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="মূলপাতা"
+        android:icon="@drawable/home_icon"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/videoGallery"-->
+<!--        android:title="ভিডিও"-->
+<!--        android:icon="@drawable/video_icon"-->
+<!--        />-->
+
+            <item
+                android:id="@+id/curriculumVitae"
+                android:title="জীবন বৃত্তান্ত"
+                android:icon="@drawable/life_sketch"
+                />
+
+            <item
+                android:id="@+id/political_life"
+                android:title="রাজনৈতিক জীবন"
+                android:icon="@drawable/political_resume"
+                />
+
+            <item
+                android:id="@+id/speech"
+                android:title="বার্তা/উক্তি"
+                android:icon="@drawable/development_icon"
+                />
+
+<!--            <item-->
+<!--                android:id="@+id/achievement"-->
+<!--                android:title="অর্জন"-->
+<!--                android:icon="@drawable/achievment_icon"-->
+<!--                />-->
+
+<!--    <item-->
+<!--        android:title="ইভেন্ট"-->
+<!--        >-->
+<!--        <menu>-->
+
+<!--            <item-->
+<!--                android:id="@+id/next_event"-->
+<!--                android:title="পরবর্তী ইভেন্ট"-->
+<!--                />-->
+
+<!--            <item-->
+<!--                android:id="@+id/present_event"-->
+<!--                android:title="বর্তমান ইভেন্ট"-->
+<!--                />-->
+
+<!--            <item-->
+<!--                android:id="@+id/past_event"-->
+<!--                android:title="বিগত ইভেন্ট"-->
+<!--                />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+
+
+
+
+
+    <item
+        android:id="@+id/newsPost"
+        android:title="সংবাদপত্র"
+        android:icon="@drawable/newspaper_icon"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/navGallery"-->
+<!--        android:title="ফটো গ্যালারি"-->
+<!--        android:icon="@drawable/gallery"-->
+<!--        />-->
+
+
+
+</menu>

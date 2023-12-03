@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MessageAndSpeach">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="বার্তা/উক্তি"
+        app:titleTextColor="@color/black"
+        android:id="@+id/toolbarSpeach"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/cover_image"
+                android:scaleType="fitCenter"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="ফরহাদ হোসেন এমপি"
+                android:gravity="center"
+                android:padding="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:justificationMode="inter_word"
+                android:text="জনাব ফরহাদ হোসেন ১৯৭২ খ্রিষ্টাব্দের ৫ জুন মেহেরপুরে জন্মগ্রহণ করেন। তাঁর পিতা ছহিউদ্দীন বিশ্বাস। তিনি ১৯৭০ খ্রিষ্টাব্দে এম.এন.এ. (জাতীয় পরিষদের সদস্য) ছিলেন। এ ছাড়াও তিনি ১৯৭৩ ও ১৯৮৬ খ্রিষ্টাব্দে সংসদীয় আসন ৭৩ মেহেরপুর-১-এর সংসদ সদস্য নির্বাচিত হয়েছিলেন। তিনি ১৯৭৫ খ্রিস্টাব্দে বাকশাল ডিস্ট্রিক্ট গভর্নর নির্বাচিত হন। তিনি বৃহত্তর কুষ্টিয়া জেলা আওয়ামী লীগের অন্যতম প্রতিষ্ঠাতা ছিলেন। বঙ্গবন্ধুর অত্যন্ত ঘনিষ্ঠ ও বিশ্বস্ত রাজনৈতিক সহকর্মী মরহুম ছহিউদ্দীন বিশ্বাস মুক্তিযুদ্ধের অন্যতম সংগঠক হিসাবে স্বাধীনতা সংগ্রামে গুরুত্বপূর্ণ ভূমিকা রাখেন। তিনি মেহেরপুরের মুজিবনগরে বাংলাদেশের প্রথম সরকারের শপথগ্রহণ অনুষ্ঠানের আয়োজক ও সংগঠক ছিলেন।"
+
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

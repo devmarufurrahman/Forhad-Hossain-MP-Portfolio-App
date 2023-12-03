@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComplainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="অভিযোগ"
+        app:titleTextColor="@color/black" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="বিষয়"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_shape"
+            android:layout_marginVertical="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ঠিকানা"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_shape"
+            android:layout_marginVertical="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="অভিযোগ বিবরণ"
+            android:inputType="text"
+            android:minHeight="100dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:background="@drawable/edit_shape"
+            android:layout_marginVertical="10dp"
+            android:gravity="start"
+            />
+
+
+        <RelativeLayout
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_shape"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ডকুমেন্ট অ্যাটেচমেন্ট"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/member_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_camera" />
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" অভিযোগ অনুরোধ জমা দিন"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_shape"
+            app:backgroundTint="@color/orangeDark"
+            android:layout_marginBottom="30dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

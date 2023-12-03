@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/navContact"
+        android:title="যোগাযোগ"
+        android:icon="@drawable/contact_icon"
+        />
+
+    <item
+        android:id="@+id/navComplain"
+        android:title="অভিযোগ"
+        android:icon="@drawable/complain_icon"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/navLogin"-->
+<!--        android:title="লগইন"-->
+<!--        android:icon="@drawable/login_icon"-->
+<!--        />-->
+
+
+<!--    <item-->
+<!--        android:id="@+id/navSettings"-->
+<!--        android:title="সেটিংস"-->
+<!--        android:icon="@drawable/settings"-->
+<!--        />-->
+
+
+</menu>
