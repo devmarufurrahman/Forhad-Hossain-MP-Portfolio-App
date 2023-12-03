@@ -65,13 +65,10 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavView);
 //        bottomNavigationView.setBackground(null);
 
-//        bottomNavigationView.setItemIconTintList(null);
+        bottomNavigationView.setItemIconTintList(null);
 
 
         // id selection
-        event = findViewById(R.id.event);
-        speachBtn =findViewById(R.id.speechBtn);
-        complainBtn = findViewById(R.id.complainBtn);
         imageSlider = findViewById(R.id.imgSlider);
 
 
@@ -89,28 +86,6 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
         navigationView.setItemIconTintList(null);
-
-        // complain activity
-        complainBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ComplainActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-        // speech activity
-        speachBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MessageAndSpeach.class);
-                startActivity(intent);
-            }
-        });
-
-
-
 
 
         // Drawer item Click event ------
@@ -134,8 +109,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), PoliticatlBiography.class);
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
-                } else if (id == R.id.newsPost){
-                    Intent intent = new Intent(getApplicationContext(), NewsPost.class);
+                } else if (id == R.id.media){
+                    Intent intent = new Intent(getApplicationContext(), MediaActivity.class);
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
 

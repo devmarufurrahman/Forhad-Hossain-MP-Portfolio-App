@@ -8,11 +8,11 @@
         android:icon="@drawable/home_icon"
         />
 
-<!--    <item-->
-<!--        android:id="@+id/videoGallery"-->
-<!--        android:title="ভিডিও"-->
-<!--        android:icon="@drawable/video_icon"-->
-<!--        />-->
+    <item
+        android:id="@+id/media"
+        android:title="মিডিয়া"
+        android:icon="@drawable/video_icon"
+        />
 
             <item
                 android:id="@+id/curriculumVitae"
@@ -65,11 +65,11 @@
 
 
 
-    <item
-        android:id="@+id/newsPost"
-        android:title="সংবাদপত্র"
-        android:icon="@drawable/newspaper_icon"
-        />
+<!--    <item-->
+<!--        android:id="@+id/newsPost"-->
+<!--        android:title="সংবাদপত্র"-->
+<!--        android:icon="@drawable/newspaper_icon"-->
+<!--        />-->
 
 <!--    <item-->
 <!--        android:id="@+id/navGallery"-->
