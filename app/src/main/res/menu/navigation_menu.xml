@@ -5,13 +5,13 @@
     <item
         android:id="@+id/home"
         android:title="মূলপাতা"
-        android:icon="@drawable/home_icon"
+        android:icon="@drawable/home"
         />
 
     <item
         android:id="@+id/media"
         android:title="মিডিয়া"
-        android:icon="@drawable/video_icon"
+        android:icon="@drawable/media"
         />
 
             <item
@@ -23,13 +23,13 @@
             <item
                 android:id="@+id/political_life"
                 android:title="রাজনৈতিক জীবন"
-                android:icon="@drawable/political_resume"
+                android:icon="@drawable/politician"
                 />
 
             <item
                 android:id="@+id/speech"
                 android:title="বার্তা/উক্তি"
-                android:icon="@drawable/development_icon"
+                android:icon="@drawable/conference"
                 />
 
 <!--            <item-->
