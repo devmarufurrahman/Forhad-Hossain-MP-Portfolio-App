@@ -73,7 +73,7 @@
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_marginBottom="10dp"
-                            android:text="State Minister"
+                            android:text="প্রতিমন্ত্রী"
                             android:textColor="@color/black"
                             />
 
@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:layout_marginBottom="10dp"
-                            android:text="Ministry of Public  Administration"
+                            android:text="জনপ্রশাসন মন্ত্রণালয়"
                             android:textColor="@color/black"
                             />
 
@@ -94,7 +94,7 @@
                             android:textStyle="bold"
                             android:layout_marginBottom="10dp"
                             android:textSize="14sp"
-                            android:text="January 07, 2019 to Present"
+                            android:text="জানুয়ারী ০৭, ২০১৯ থেকে এখন পর্যন্ত"
                             />
 
                     </LinearLayout>
@@ -146,7 +146,7 @@
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_marginBottom="10dp"
-                            android:text="President"
+                            android:text="সভাপতি"
                             android:textColor="@color/black"
                             />
 
@@ -156,7 +156,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:layout_marginBottom="10dp"
-                            android:text="Meherpur District Awami League"
+                            android:text="মেহেরপুর জেলা আওয়ামীলীগ"
                             android:textColor="@color/black"
                             />
 
@@ -167,7 +167,7 @@
                             android:textStyle="bold"
                             android:layout_marginBottom="10dp"
                             android:textSize="14sp"
-                            android:text="February 28, 2015 to present"
+                            android:text="ফেব্রুয়ারী ২৮, ২০১৫ থেকে এখন পর্যন্ত"
                             />
 
                     </LinearLayout>
@@ -219,7 +219,7 @@
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:layout_marginBottom="10dp"
-                            android:text="Member of Parliament"
+                            android:text="সংসদ সদস্য"
                             android:textColor="@color/black"
                             />
 
@@ -229,7 +229,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="18sp"
                             android:layout_marginBottom="10dp"
-                            android:text="Bangladesh Parliament"
+                            android:text="বাংলাদেশ সংসদ"
                             android:textColor="@color/black"
                             />
 
@@ -240,7 +240,7 @@
                             android:textStyle="bold"
                             android:layout_marginBottom="10dp"
                             android:textSize="14sp"
-                            android:text="January 08, 2014 to present"
+                            android:text="জানুয়ারী ০৮, ২০১৪ থেকে এখন পর্যন্ত"
                             />
 
                     </LinearLayout>
@@ -250,92 +250,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
-<!--            <RelativeLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                >-->
-
-<!--                <View-->
-<!--                    android:layout_width="3dp"-->
-<!--                    android:layout_height="1100dp"-->
-<!--                    android:background="@color/orangeDark"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:layout_centerInParent="true"-->
-<!--                    />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="95dp"-->
-<!--                    android:layout_marginTop="8dp"-->
-<!--                    android:layout_marginEnd="92dp"-->
-<!--                    android:src="@drawable/present_date" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="45dp"-->
-<!--                    android:layout_marginTop="119dp"-->
-<!--                    android:layout_marginEnd="180dp"-->
-<!--                    android:scaleType="fitCenter"-->
-<!--                    android:src="@drawable/political_img_1" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="94dp"-->
-<!--                    android:layout_marginTop="352dp"-->
-<!--                    android:layout_marginEnd="92dp"-->
-<!--                    android:src="@drawable/political_date2" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="180dp"-->
-<!--                    android:layout_marginTop="437dp"-->
-<!--                    android:layout_marginEnd="45dp"-->
-<!--                    android:scaleType="fitCenter"-->
-<!--                    android:src="@drawable/political_img_2" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="93dp"-->
-<!--                    android:layout_marginTop="684dp"-->
-<!--                    android:layout_marginEnd="93dp"-->
-<!--                    android:src="@drawable/political_date3" />-->
-
-<!--                <ImageView-->
-<!--                    android:layout_width="150dp"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    android:layout_alignParentStart="true"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_alignParentEnd="true"-->
-<!--                    android:layout_marginStart="45dp"-->
-<!--                    android:layout_marginTop="781dp"-->
-<!--                    android:layout_marginEnd="180dp"-->
-<!--                    android:scaleType="fitCenter"-->
-<!--                    android:src="@drawable/political_img_3" />-->
-
-
-<!--            </RelativeLayout>-->
-
 
 
         </LinearLayout>
