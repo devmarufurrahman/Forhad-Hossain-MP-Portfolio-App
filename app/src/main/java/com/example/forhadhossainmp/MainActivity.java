@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -30,6 +31,7 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -46,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout event, speachBtn, complainBtn;
     ArrayList<String> eventList;
     ImageSlider imageSlider;
+    TextView detailsTv, readMoreTv;
     ArrayList<SlideModel> imageList = new ArrayList<>();
+    Button postBtn1, postBtn2, postBtn3, postBtn4, postBtn5;
 
 
     @Override
@@ -70,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
 
         // id selection
         imageSlider = findViewById(R.id.imgSlider);
+        detailsTv = findViewById(R.id.detailsTv);
+        readMoreTv = findViewById(R.id.readMoreTv);
+        postBtn1 = findViewById(R.id.postBtn1);
+        postBtn2 = findViewById(R.id.postBtn2);
+        postBtn3 = findViewById(R.id.postBtn3);
+        postBtn4 = findViewById(R.id.postBtn4);
+        postBtn5 = findViewById(R.id.postBtn5);
 
 
         // slider image
@@ -135,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
 
                 int id = item.getItemId();
                 if (id == R.id.event){
-
                     eventGet();
 
                 } else if (id == R.id.development_activities){
@@ -150,6 +160,68 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+        // details text view
+        detailsTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (detailsTv.getMaxLines() == 5){
+                    detailsTv.setMaxLines(700);
+                    readMoreTv.setVisibility(View.GONE);
+                } else {
+                    detailsTv.setMaxLines(5);
+                    readMoreTv.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+
+        // post details button
+        postBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PostDetailsActivity.class);
+                intent.putExtra("img","img1");
+                startActivity(intent);
+            }
+        });
+
+        postBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PostDetailsActivity.class);
+                intent.putExtra("img","img2");
+                startActivity(intent);
+            }
+        });
+        postBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PostDetailsActivity.class);
+                intent.putExtra("img","img3");
+                startActivity(intent);
+            }
+        });
+        postBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PostDetailsActivity.class);
+                intent.putExtra("img","img4");
+                startActivity(intent);
+            }
+        });
+        postBtn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PostDetailsActivity.class);
+                intent.putExtra("img","img5");
+                startActivity(intent);
+            }
+        });
+
+
+        // plus button action
 
 
 

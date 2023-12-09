@@ -68,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="15dp"
             >
 
             <LinearLayout
@@ -75,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/home_cover"
                 android:orientation="vertical"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginHorizontal="15dp"
                 android:layout_marginBottom="10dp"
                 >
 
@@ -101,35 +102,519 @@
                     android:textSize="20sp"
                     />
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:text="জনপ্রশাসন প্রতিমন্ত্রী"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    />
+                    android:id="@+id/relativeDetailsTv"
+                    >
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:layout_gravity="center"
-                    android:justificationMode="inter_word"
-                    android:text="@string/mp_bio_details"
-                    />
+                    <TextView
+                        android:id="@+id/detailsTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:justificationMode="inter_word"
+                        android:maxLines="5"
+                        android:paddingBottom="10dp"
+                        android:text="@string/mp_bio_details"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/readMoreTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/detailsTv"
+                        android:layout_alignBottom="@+id/detailsTv"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-6dp"
+                        android:text="@string/read_more"
+                        android:textColor="#0238AC"
+                        android:textSize="14sp" />
+
+
+                </RelativeLayout>
+
+
+
 
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            android:padding="10dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/courseEnrollImg1"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/development_img1"
+                                app:shapeAppearance="@style/RoundShapeImg"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="মুজিবনগর টেকনিক্যাল স্কুল অ্যান্ড কলেজ উন্নয়নের ধরনঃ শিক্ষা । স্থানঃ মুজিবনগর, মেহেরপুর"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                                <Button
+                                    android:id="@+id/postBtn1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" বিস্তারিত দেখুন "
+                                    android:padding="7dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/button_shape"
+                                    app:backgroundTint="@color/orangeDark"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            android:padding="10dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/courseEnrollImg2"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/development_img1"
+                                app:shapeAppearance="@style/RoundShapeImg"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="মুজিবনগর টেকনিক্যাল স্কুল অ্যান্ড কলেজ উন্নয়নের ধরনঃ শিক্ষা । স্থানঃ মুজিবনগর, মেহেরপুর"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                                <Button
+                                    android:id="@+id/postBtn2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" বিস্তারিত দেখুন "
+                                    android:layout_gravity="center"
+                                    android:padding="7dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/button_shape"
+                                    app:backgroundTint="@color/orangeDark"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            android:padding="10dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/courseEnrollImg3"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/development_img2"
+                                app:shapeAppearance="@style/RoundShapeImg"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="নার্সিং কলেজ উন্নয়নের ধরনঃ স্বাস্থ্য খাত । স্থানঃ Meherpur"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <Button
+                                    android:id="@+id/postBtn3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" বিস্তারিত দেখুন "
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:padding="7dp"
+                                    android:background="@drawable/button_shape"
+                                    app:backgroundTint="@color/orangeDark"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            android:padding="10dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/courseEnrollImg4"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/development_img1"
+                                app:shapeAppearance="@style/RoundShapeImg"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="মুজিবনগর টেকনিক্যাল স্কুল অ্যান্ড কলেজ উন্নয়নের ধরনঃ শিক্ষা । স্থানঃ মুজিবনগর, মেহেরপুর"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <Button
+                                    android:id="@+id/postBtn4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" বিস্তারিত দেখুন "
+                                    android:layout_gravity="center"
+                                    android:padding="7dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/button_shape"
+                                    app:backgroundTint="@color/orangeDark"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="1dp"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+
+                            android:padding="10dp">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/courseEnrollImg6"
+                                android:layout_width="300dp"
+                                android:layout_height="200dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/development_img1"
+                                app:shapeAppearance="@style/RoundShapeImg"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="মুজিবনগর টেকনিক্যাল স্কুল অ্যান্ড কলেজ উন্নয়নের ধরনঃ শিক্ষা । স্থানঃ মুজিবনগর, মেহেরপুর"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+
+                                <Button
+                                    android:id="@+id/postBtn5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" বিস্তারিত দেখুন "
+                                    android:layout_gravity="center"
+                                    android:padding="7dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/button_shape"
+                                    app:backgroundTint="@color/orangeDark"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
 
 
     </ScrollView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/bottomNavView"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingStart="3dp"
+            app:fab_colorNormal="@color/gray"
+            app:fab_colorPressed="#00E2FF"
+            app:fab_icon="@drawable/appoinment_icon"
+            app:fabCustomSize="19dp"
+            app:fab_size="mini"
+            app:rippleColor="@color/black"
+            app:fab_title="Appointment"
+            app:fab_stroke_visible="true"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingStart="3dp"
+            app:fab_colorNormal="@color/gray"
+            app:fab_colorPressed="#00E2FF"
+            android:src="@drawable/contact_icon"
+            app:fab_size="mini"
+            app:fabCustomSize="19dp"
+            app:rippleColor="@color/black"
+            app:fab_title="Complain"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
 
     <View
         android:layout_above="@+id/bottomNavView"

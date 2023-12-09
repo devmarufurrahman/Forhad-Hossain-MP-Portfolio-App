@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="appBarColor">#f2ce94</color>
     <color name="orangeDark">#FF9800</color>
-    <color name="gray">#B2ADA7</color>
+    <color name="gray">#CDCBC8</color>
+    <color name="hintColor">#ACACAC</color>
     <color name="red">#FD071D</color>
 </resources>

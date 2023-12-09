@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
 
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
                             >
 
                             <TextView
@@ -90,7 +90,21 @@
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
 
+
+                            <Button
+                                android:id="@+id/postBtn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" বিস্তারিত দেখুন "
+                                android:padding="7dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/button_shape"
+                                app:backgroundTint="@color/orangeDark"
+                                />
+
                         </LinearLayout>
+
 
 
                     </LinearLayout>
@@ -117,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -140,7 +154,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -158,6 +172,19 @@
                                 android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
+
+
+                            <Button
+                                android:id="@+id/postBtn2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" বিস্তারিত দেখুন "
+                                android:layout_gravity="center"
+                                android:padding="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/button_shape"
+                                app:backgroundTint="@color/orangeDark"
+                                />
 
                         </LinearLayout>
 
@@ -186,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -209,7 +236,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -227,6 +254,18 @@
                                 android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
+
+                            <Button
+                                android:id="@+id/postBtn3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" বিস্তারিত দেখুন "
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:padding="7dp"
+                                android:background="@drawable/button_shape"
+                                app:backgroundTint="@color/orangeDark"
+                                />
 
                         </LinearLayout>
 
@@ -255,7 +294,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -278,7 +317,7 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="vertical">
 
                             <TextView
@@ -295,6 +334,18 @@
                                 android:text="প্রকাশের তারিখ:  ২ মে, ২০২২"
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
+
+                            <Button
+                                android:id="@+id/postBtn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" বিস্তারিত দেখুন "
+                                android:layout_gravity="center"
+                                android:padding="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/button_shape"
+                                app:backgroundTint="@color/orangeDark"
+                                />
 
                         </LinearLayout>
 
@@ -323,7 +374,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -347,7 +398,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginVertical="10dp"
+                            android:layout_marginTop="10dp"
                             >
 
                             <TextView
@@ -366,6 +417,19 @@
                                 android:textColor="@color/black"
                                 android:textSize="12sp" />
 
+
+                            <Button
+                                android:id="@+id/postBtn5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" বিস্তারিত দেখুন "
+                                android:layout_gravity="center"
+                                android:padding="7dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/button_shape"
+                                app:backgroundTint="@color/orangeDark"
+                                />
+
                         </LinearLayout>
 
 
@@ -379,7 +443,6 @@
 
 
         </LinearLayout>
-
 
     </ScrollView>
 

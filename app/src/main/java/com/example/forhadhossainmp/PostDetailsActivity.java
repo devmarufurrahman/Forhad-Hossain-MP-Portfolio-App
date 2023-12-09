@@ -24,8 +24,6 @@ public class PostDetailsActivity extends AppCompatActivity {
         // get intent value
         Intent intent = getIntent();
         imgIntent = intent.getStringExtra("img");
-        titleIntent = intent.getStringExtra("title");
-        detailsIntent = intent.getStringExtra("details");
 
         //id define
         postDetails = findViewById(R.id.postDetails);
@@ -44,15 +42,23 @@ public class PostDetailsActivity extends AppCompatActivity {
 
     private void setPost(String img, String title, String details) {
         if (img.equals("img1")){
-            postImg.setImageResource(R.drawable.feature_image1);
+            postImg.setImageResource(R.drawable.development_img1);
             postTitle.setText(R.string.post_title_1);
             postDetails.setText(R.string.post_details_1);
         } else if (img.equals("img2")) {
-            postImg.setImageResource(R.drawable.feature_image2);
+            postImg.setImageResource(R.drawable.development_img1);
             postTitle.setText(R.string.post_title_2);
             postDetails.setText(R.string.post_details_2);
         } else if (img.equals("img3")) {
-            postImg.setImageResource(R.drawable.feature_image3);
+            postImg.setImageResource(R.drawable.development_img2);
+            postTitle.setText(R.string.post_title_3);
+            postDetails.setText(R.string.post_details_3);
+        } else if (img.equals("img4")) {
+            postImg.setImageResource(R.drawable.development_img1);
+            postTitle.setText(R.string.post_title_3);
+            postDetails.setText(R.string.post_details_3);
+        } else if (img.equals("img5")) {
+            postImg.setImageResource(R.drawable.development_img1);
             postTitle.setText(R.string.post_title_3);
             postDetails.setText(R.string.post_details_3);
         }
