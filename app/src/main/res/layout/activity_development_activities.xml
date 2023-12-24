@@ -59,7 +59,7 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/courseEnrollImg1"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/development_img1"
@@ -106,7 +106,6 @@
                         </LinearLayout>
 
 
-
                     </LinearLayout>
 
 
@@ -143,7 +142,7 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/courseEnrollImg2"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/development_img1"
@@ -225,7 +224,7 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/courseEnrollImg3"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/development_img2"
@@ -306,7 +305,7 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/courseEnrollImg4"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/development_img1"
@@ -386,7 +385,7 @@
 
                         <com.google.android.material.imageview.ShapeableImageView
                             android:id="@+id/courseEnrollImg6"
-                            android:layout_width="300dp"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/development_img1"

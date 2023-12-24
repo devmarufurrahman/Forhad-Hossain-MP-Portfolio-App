@@ -73,6 +73,19 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="জাতীয় পরিচয় পত্রের নাম্বার"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:elevation="3dp"
+                android:textColorHint="@color/hintColor"
+                android:padding="10dp"
+                android:background="@drawable/edit_shape"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="প্রতিষ্ঠানের নাম"
                 android:inputType="text"
                 android:minHeight="48dp"
@@ -83,14 +96,15 @@
                 android:layout_marginVertical="10dp"
                 />
 
-            <EditText
+            <Button
+                android:id="@+id/dateAppointment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="অ্যাপয়েন্টমেন্ট তারিখ"
                 android:inputType="date"
                 android:minHeight="48dp"
                 android:elevation="3dp"
-                android:textColorHint="@color/hintColor"
+                android:textColorHint="@color/black"
                 android:padding="10dp"
                 android:background="@drawable/edit_shape"
                 />
@@ -133,8 +147,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="অ্যাপয়েন্টমেন্ট আবেদনপত্র "
-                    android:textColor="@color/black"
+                    android:text="আপনার জাতীয় পরিচয় পত্র যুক্ত করুন"
+                    android:textColor="@color/red"
                     android:textSize="16sp"
                     android:padding="10dp"
                     android:layout_alignParentStart="true"

@@ -12,4 +12,5 @@
     <color name="gray">#CDCBC8</color>
     <color name="hintColor">#ACACAC</color>
     <color name="red">#FD071D</color>
+    <color name="theme_color_light">#F44336</color>
 </resources>

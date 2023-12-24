@@ -12,7 +12,7 @@ import android.view.View;
 
 public class MediaActivity extends AppCompatActivity {
 
-    CardView newsPost;
+    CardView newsPost, photoGalleryCard, socialCard;
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,9 @@ public class MediaActivity extends AppCompatActivity {
 
         // id define
         newsPost = findViewById(R.id.newsPost);
+        photoGalleryCard = findViewById(R.id.photoGalleryCard);
+        socialCard = findViewById(R.id.socialCard);
+
 
 
 
@@ -35,6 +38,27 @@ public class MediaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        // photo gallery view
+        photoGalleryCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaActivity.this, photo_gallery.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // Social Media Activity
+        socialCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MediaActivity.this, SocialMediaDetails.class);
+                startActivity(intent);
+            }
+        });
+
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

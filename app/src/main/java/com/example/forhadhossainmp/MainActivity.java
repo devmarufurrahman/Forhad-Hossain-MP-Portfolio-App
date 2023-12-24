@@ -30,8 +30,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.github.clans.fab.FloatingActionButton;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     TextView detailsTv, readMoreTv;
     ArrayList<SlideModel> imageList = new ArrayList<>();
     Button postBtn1, postBtn2, postBtn3, postBtn4, postBtn5;
+
+    FloatingActionButton complainFav, appointmentFav;
 
 
     @Override
@@ -81,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         postBtn3 = findViewById(R.id.postBtn3);
         postBtn4 = findViewById(R.id.postBtn4);
         postBtn5 = findViewById(R.id.postBtn5);
+        complainFav = findViewById(R.id.complainFav);
+        appointmentFav = findViewById(R.id.appointmentFav);
 
 
         // slider image
@@ -127,6 +131,11 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (id == R.id.speech){
                     Intent intent = new Intent(getApplicationContext(), MessageAndSpeach.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+
+                } else if (id == R.id.profile){
+                    Intent intent = new Intent(getApplicationContext(), UserProfile.class);
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
 
@@ -222,7 +231,21 @@ public class MainActivity extends AppCompatActivity {
 
 
         // plus button action
+        complainFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ComplainActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        appointmentFav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GetAnAppointment.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

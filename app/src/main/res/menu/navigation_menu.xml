@@ -32,11 +32,11 @@
                 android:icon="@drawable/conference"
                 />
 
-<!--            <item-->
-<!--                android:id="@+id/achievement"-->
-<!--                android:title="অর্জন"-->
-<!--                android:icon="@drawable/achievment_icon"-->
-<!--                />-->
+            <item
+                android:id="@+id/profile"
+                android:title="প্রোফাইল"
+                android:icon="@drawable/user_image"
+                />
 
 <!--    <item-->
 <!--        android:title="ইভেন্ট"-->
