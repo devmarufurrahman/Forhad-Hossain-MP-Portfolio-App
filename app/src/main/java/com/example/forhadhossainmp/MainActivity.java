@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -54,11 +55,19 @@ public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton complainFav, appointmentFav;
 
+    String isContact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //get shared preference
+        SharedPreferences preferences = getSharedPreferences("SharePreference", MODE_PRIVATE);
+        isContact = preferences.getString("contact","");
+
+
 
         // Navigation Drawer------------------------------
         drawerLayout = findViewById(R.id.drawer_layout);
@@ -162,8 +171,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 } else if (id == R.id.navMeeting){
-                    Intent intent = new Intent(getApplicationContext(), GetAnAppointment.class);
-                    startActivity(intent);
+
+                    // login option enable
+
+                    if (isContact.equals("")){
+
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
+
+
+                    } else {
+
+                        Intent intent = new Intent(getApplicationContext(), GetAnAppointment.class);
+                        startActivity(intent);
+                    }
+
                 }
 
                 return true;
@@ -230,20 +252,49 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
         // plus button action
         complainFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ComplainActivity.class);
-                startActivity(intent);
+
+                // login option enable
+
+                if (isContact.equals("")){
+
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+
+
+                } else {
+
+                    Intent intent = new Intent(MainActivity.this, ComplainActivity.class);
+                    startActivity(intent);
+                }
+
             }
         });
 
         appointmentFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GetAnAppointment.class);
-                startActivity(intent);
+
+                // login option enable
+
+                if (isContact.equals("")){
+
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+
+
+                } else {
+
+                    Intent intent = new Intent(MainActivity.this, GetAnAppointment.class);
+                    startActivity(intent);
+                }
+
+
             }
         });
 

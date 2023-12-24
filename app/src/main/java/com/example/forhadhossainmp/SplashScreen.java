@@ -22,7 +22,7 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(iHome);
                 finish();
             }
-        },3000);
+        },2000);
 
     }
 }

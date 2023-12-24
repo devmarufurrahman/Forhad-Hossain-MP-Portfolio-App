@@ -43,4 +43,5 @@ dependencies {
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation("com.github.clans:fab:1.6.4")
     implementation ("com.karumi:dexter:6.0.2")
+    implementation ("com.github.VishnuSivadasVS:Advanced-HttpURLConnection:1.2")
 }
